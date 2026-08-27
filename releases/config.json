@@ -1,0 +1,8 @@
+﻿{
+  "apiKey": "AIzaSyCJmL4vk2-c2cxgeqLBKs21c8GsAs1DUnU",
+  "databaseUrl": "https://chicoseguro-9e6c1-default-rtdb.firebaseio.com",
+  "email": "REPLACE_WITH_CHILD_EMAIL",
+  "password": "REPLACE_WITH_CHILD_PASSWORD",
+  "parentEmail": "REPLACE_WITH_PARENT_EMAIL",
+  "deviceName": "REPLACE_WITH_DEVICE_NAME"
+}
