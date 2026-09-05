@@ -88,7 +88,7 @@ if exist "%HOSTS%.kidsafe_bak" (
     del /f /q "%HOSTS%.kidsafe_bak" >nul 2>&1
     echo         OK: hosts restaurado desde copia de seguridad
 ) else (
-    findstr /V /B /C:"0.0.0.0" /C:"# BEGIN KidSafe" /C:"# END KidSafe" /C:"# Generado por KidSafe" "%HOSTS%" > "%TEMP%\hosts_clean" 2>nul
+    findstr /V /R /C:"^0\.0\.0\.0" /C:"^# BEGIN KidSafe" /C:"^# END KidSafe" /C:"^# Generado por KidSafe" "%HOSTS%" > "%TEMP%\hosts_clean" 2>nul
     if exist "%TEMP%\hosts_clean" (
         copy /y "%TEMP%\hosts_clean" "%HOSTS%" >nul 2>&1
         del /f /q "%TEMP%\hosts_clean" >nul 2>&1
